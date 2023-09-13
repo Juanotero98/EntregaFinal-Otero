@@ -25,12 +25,12 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--clr-main-light);
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #000000;
 }
 
 .logo {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .menu {
@@ -42,7 +42,7 @@
 
 .menu-link {
   text-decoration: none;
-  color: black;
+  color: #000000;
   font-size: 1.2rem;
 }
 
@@ -63,7 +63,7 @@
   flex-direction: column;
   border-radius: 1rem;
   overflow: hidden;
-  border: 2px solid black;
+  border: 2px solid #000000;
 }
 
 .producto > div {
@@ -77,8 +77,8 @@
 
 .producto .info {
   text-decoration: none;
-  background-color: white;
-  color: black;
+  background-color: #ffffff;
+  color: #000000;
   padding: .5rem;
   width: max-content;
   border-radius: .5rem;
@@ -87,64 +87,22 @@
 
 .producto .info:hover {
   background-color: white;
-  color: black;
+  color: #000000;
 }
 
-.producto-detalle {
-  padding-block: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+.btn-custom{
+  background-color: #000000;
+  border-color: #000000;
+  
 }
 
-.producto-detalle img {
-  width: 100%;
-}
 
-.producto-detalle-info h3 {
-  font-size: 2rem;
-}
 
-.precio {
-  font-size: 2rem;
-  margin-top: 2rem;
-  font-weight: 600;
-}
 
-.item-count {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
 
-.item-count button, .agregar-al-carrito, .enviar {
-  background-color: var(--clr-main);
-  border: 0;
-  width: 2rem;
-  height: 2rem;
-  color: white;
-  border-radius: .5rem;
-  cursor: pointer;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  line-height: 1;
-  border: 2px solid var(--clr-main);
-  transition: .2s;
-}
 
-.item-count button:hover, .agregar-al-carrito:hover, .enviar:hover {
-  background-color: white;
-  color: black;
-}
 
-.agregar-al-carrito, .enviar {
-  width: auto;
-  height: auto;
-  margin-top: 1rem;
-  padding: 1rem;
-}
+
+
+
 

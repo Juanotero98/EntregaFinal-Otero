@@ -7,7 +7,7 @@ const Item = ({producto}) => {
         <div>
             <h4>{producto.titulo}</h4>
             <p>Precio: ${producto.precio}</p>
-            <a className='info' href={`/item/${producto.id}`}>Info</a>
+            <a className='info' href={`/item/${producto.id}`}>Agregar al carrito</a>
         </div>
 
     </div>
