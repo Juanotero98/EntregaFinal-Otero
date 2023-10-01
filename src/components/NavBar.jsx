@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   
@@ -10,7 +11,7 @@ const NavBar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light .bg-danger-subtle">
-      <a className="navbar-brand" href="#">Goiri Jollas</a>
+     <Link to="/" className="navbar-brand"><h1>Goiri Joyas</h1></Link>
 
       <button
         className="navbar-toggler"
@@ -27,13 +28,22 @@ const NavBar = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Inicio</a>
+            <Link className="nav-link" to="/">Inicio</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Productos</a>
+            <Link className="nav-link" to="/productos">Productos</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Contacto</a>
+            <Link className="nav-link" to="/productos/Anillos">Anillos</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/productos/Pulseras">Pulseras</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/productos/Aros">Aros</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="#">Contacto</Link>
           </li>
           <li className="nav-item">
             <button className='btn btn-primary btn-lg btn-custom '>

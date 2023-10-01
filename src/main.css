@@ -17,6 +17,8 @@
 
 .main-title {
   margin-top: 2rem;
+  text-align: center;
+  text-decoration:underline;
 }
 
 .navbar {
@@ -68,7 +70,7 @@
 
 .producto > div {
   padding: 1rem;
-  background-color: #fcced6;
+  background-color: #ffbec9;
   display: flex;
   flex-direction: column;
   gap: .5rem;
@@ -96,6 +98,26 @@
   
 }
 
+.producto-detalle{
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 2px solid #000000;
+  padding: 1rem;
+  background-color: #ffbec9;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.titulo{
+  font-size: xx-large;
+}
+
+.precio{
+  
+}
 
 
 

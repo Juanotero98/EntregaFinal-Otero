@@ -2,54 +2,63 @@
     {
         "id":1,
         "titulo":"Anillo 1",
+        "categoria":"Anillos",
         "imagen":"https://cdnx.jumpseller.com/zazu/image/3310676/resize/756/945?1590200452",
         "precio": 5000
     },
     {
         "id":2,
         "titulo":"Anillo 2",
+        "categoria":"Anillos",
         "imagen":"https://cdnx.jumpseller.com/zazu/image/3310676/resize/756/945?1590200452",
         "precio": 4500
     },
     {
         "id":3,
         "titulo":"Anillo 3",
+        "categoria":"Anillos",
         "imagen":"https://cdnx.jumpseller.com/zazu/image/3310676/resize/756/945?1590200452",
         "precio": 4000
     },
     {
         "id":4,
         "titulo":"Pulsera 1",
+        "categoria":"Pulseras",
         "imagen":"https://images-na.ssl-images-amazon.com/images/I/51ipI0TtfbL._AC_UY695_.jpg",
         "precio": 6000
     },
     {
         "id":5,
         "titulo":"Pulsera 2",
+        "categoria":"Pulseras",
         "imagen":"https://images-na.ssl-images-amazon.com/images/I/51ipI0TtfbL._AC_UY695_.jpg",
         "precio": 5500
     },
     {
         "id":6,
         "titulo":"Pulsera 3",
+        "categoria":"Pulseras",
         "imagen":"https://images-na.ssl-images-amazon.com/images/I/51ipI0TtfbL._AC_UY695_.jpg",
         "precio": 6500
     },
     {
         "id":7,
         "titulo":"Aros 1",
+        "categoria":"Aros",
         "imagen":"https://elarcondenuria.com/wp-content/uploads/2020/11/aros-plata-estilo-balines-Ref-239.jpg",
         "precio": 4000
     },
     {
         "id":8,
         "titulo":"Aros 2",
+        "categoria":"Aros",
         "imagen":"https://elarcondenuria.com/wp-content/uploads/2020/11/aros-plata-estilo-balines-Ref-239.jpg",
         "precio": 3500
     },
     {
         "id":9,
         "titulo":"Aros 3",
+        "categoria":"Aros",
         "imagen":"https://elarcondenuria.com/wp-content/uploads/2020/11/aros-plata-estilo-balines-Ref-239.jpg",
         "precio": 3000
     }
