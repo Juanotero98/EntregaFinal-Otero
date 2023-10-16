@@ -1,14 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   
-  const [cartItemCount, setCartItemCount] = useState("3");
-  const increaseCartItemCount = () => {
-    setCartItemCount((prevCount) => String(parseInt(prevCount, 10) + 1));
-  };
-
   return (
     <nav className="navbar navbar-expand-lg navbar-light .bg-danger-subtle">
      <Link to="/" className="navbar-brand"><h1>Goiri Joyas</h1></Link>
@@ -43,11 +38,11 @@ const NavBar = () => {
             <Link className="nav-link" to="/productos/Aros">Aros</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="#">Contacto</Link>
+            <Link className="nav-link" to="/Contacto">Contacto</Link>
           </li>
           <li className="nav-item">
-            <button className='btn btn-primary btn-lg btn-custom '>
-              <CartWidget cartItemCount={cartItemCount}/>
+            <button>
+              <CartWidget/>
             </button>
           </li>
         </ul>

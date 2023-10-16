@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { pedirDatos } from "./Ayuda/Pedirdatos";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { database } from "../Firebase/Configuracion";
 
 export const ItemContainerList = (props) => {
   const [productos, setProductos] = useState([]);
@@ -10,17 +11,19 @@ export const ItemContainerList = (props) => {
   
 
   useEffect(() => {
-    pedirDatos().then((res) => {
-      if(categoria){
-        setProductos(res.filter((productos)=> productos.categoria === categoria));
-        setTitulo(categoria)
 
-      }else{
-        setProductos(res);
-        setTitulo("Productos")
-      }
+    const productosReferencia = collection(database, "Productos")
+    const q= categoria ? query(productosReferencia, where("categoria", "==", categoria)) : productosReferencia;
+    getDocs(q)
+    .then((response)=>{
       
-    });
+
+      setProductos(
+        response.docs.map((doc)=>{
+          return{...doc.data(), id: doc.id}
+        })
+      )
+    })
   }, [categoria]);
 
   return (
