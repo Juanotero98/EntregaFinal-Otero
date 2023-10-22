@@ -6,9 +6,8 @@ import { CartContext } from "../context/CartContext.jsx"
 const ItemDetail = ({item}) => {
 
   const {carrito, AgregarAlCarrito} = useContext(CartContext)
-  console.log(carrito)
-
   
+  console.log(carrito)
 
   const [cantidad, setCantidad]= useState(1)
 

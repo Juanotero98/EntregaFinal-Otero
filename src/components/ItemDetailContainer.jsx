@@ -7,8 +7,9 @@ import { database } from '../Firebase/Configuracion'
 const ItemDetailContainer = () => {
 
     const[item, setItem] = useState (null)
-    const id= useParams().id
 
+    const id= useParams().id
+    
     useEffect(()=>{
        const docReferencia = doc(database, "Productos", id)
        getDoc(docReferencia)

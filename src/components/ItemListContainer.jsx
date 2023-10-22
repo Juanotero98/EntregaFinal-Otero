@@ -6,7 +6,9 @@ import { database } from "../Firebase/Configuracion";
 
 export const ItemContainerList = (props) => {
   const [productos, setProductos] = useState([]);
-  const [titulo, setTitulo] = useState("productos")
+
+  const [titulo,] = useState("productos")
+
   const categoria = useParams().categoria
   
 

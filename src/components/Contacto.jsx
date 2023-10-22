@@ -8,7 +8,6 @@ const Contacto = () => {
         console.log(data)
     }
 
-    
   return (
     <div className='container'>
         <h1 className='main-title'>Contacto:</h1>

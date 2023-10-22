@@ -1,5 +1,8 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Carrito = () => {
 
@@ -9,12 +12,11 @@ const Carrito = () => {
         vaciarCarrito()
     }
 
-
-
   return (
     <div className='container'>
-        <h1 className='main-title'>Carrito</h1>
-
+        <h1 className='main-title'>
+        <FontAwesomeIcon icon={faShoppingCart} /> Carrito
+        </h1>
         {
             carrito.map((producto)=>(
                 <div key={producto.id}>
@@ -25,13 +27,17 @@ const Carrito = () => {
                 </div>
             ))
         }
-
-         <h2>Total a pagar: ${precioTotal()}</h2> 
-        <button onClick={handleVaciar}>Vaciar</button>
-
-
-
-
+        {
+          carrito.length > 0 ?
+          <>
+          <h2>Total a pagar: ${precioTotal()}</h2> 
+          <button className='boton' onClick={handleVaciar}>Vaciar</button>
+          <br/>
+          <br/>
+          <Link to="/checkout"><button className='boton'> Comprar:</button></Link>
+         </>:
+         <h2>Carrito Vacio</h2>
+        }
     </div>
   )
 }

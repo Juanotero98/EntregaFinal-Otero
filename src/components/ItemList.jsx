@@ -6,8 +6,6 @@ import Item from './Item'
   return (
     <div className='container'>
       <h2 className='main-title'>{titulo}</h2>
-      
-
       <div className="productos">
         {productos.map((productos)=> <Item producto={productos} key={productos.id}/>)}
       </div>
