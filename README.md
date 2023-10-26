@@ -1,7 +1,6 @@
 
 
-
-https://github.com/Juanotero98/EntregaFinal-Otero/assets/133821377/e8c65f35-32e9-4c0e-8eed-a234950a3203
+https://github.com/Juanotero98/EntregaFinal-Otero/assets/133821377/5e5f0990-c895-4982-b20e-2b2993abb8fa
 
 
 # Getting Started with Create React App
