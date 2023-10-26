@@ -1,4 +1,8 @@
-![React App - Opera 2023-10-26 15-26-52](https://github.com/Juanotero98/EntregaFinal-Otero/assets/133821377/28ab0e1c-00d4-4c9b-bb04-e83896879866)
+
+
+
+https://github.com/Juanotero98/EntregaFinal-Otero/assets/133821377/e8c65f35-32e9-4c0e-8eed-a234950a3203
+
 
 # Getting Started with Create React App
 
