@@ -1,3 +1,5 @@
+![React App - Opera 2023-10-26 15-26-52](https://github.com/Juanotero98/EntregaFinal-Otero/assets/133821377/6dc77a37-cd30-4385-9f38-1d87133d1957)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
